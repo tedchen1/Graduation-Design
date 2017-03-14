@@ -1,0 +1,116 @@
+﻿此报告显示将 Web 应用程序从 ASP.NET 1.1 转换为 ASP.NET 2.0 所执行的步骤。
+可能存在一些未解决的转换问题，您需要对这些问题进行手动修复。
+有关详细信息，请参考 http://go.microsoft.com/fwlink/?LinkId=46995 或搜索帮助主题“从 Visual Studio .NET 2002 或 2003 转换”。
+从位于 December 01 2016, 15:42:59 的项目文件 sc.csproj 开始转换。
+
+=========================错误===================
+
+=========================警告=================
+警告: 此 Web 项目已转换为一个基于文件的 Web 应用程序。如果您的站点包含任何 IIS 元数据信息，例如，标记为虚拟目录的子文件夹，则建议您关闭此网站，再通过使用“打开网站”命令并选择“本地 IIS”选项卡来重新打开它。
+
+=========================注释=================
+Web.Config: 已添加“xhtmlConformance”属性。
+已从文件 Admin.aspx 中移除属性 AutoEventWireup。
+已从文件 Admin.aspx 中移除属性 Codebehind。
+已将文件 Admin.aspx.cs 中(第 22 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 Admin.aspx.cs 中(第 63 行)的访问级别“lbtnNew_Click”更改为“protected”。
+已将文件 Admin.aspx.cs 中(第 73 行)的访问级别“btnNew_Click”更改为“protected”。
+已从文件 AdminHeaderControl.ascx 中移除属性 TargetSchema。
+已从文件 AdminHeaderControl.ascx 中移除属性 AutoEventWireup。
+已从文件 AdminHeaderControl.ascx 中移除属性 Codebehind。
+已将文件 AdminHeaderControl.ascx.cs 中(第 16 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 AdminRoom.aspx 中移除属性 AutoEventWireup。
+已从文件 AdminRoom.aspx 中移除属性 Codebehind。
+已将文件 AdminRoom.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 AdminRoom.aspx.cs 中(第 59 行)的访问级别“btnAddBuilding_Click”更改为“protected”。
+已将文件 AdminRoom.aspx.cs 中(第 80 行)的访问级别“lkbDeleteBuilding_Click”更改为“protected”。
+已将文件 AdminRoom.aspx.cs 中(第 116 行)的访问级别“lkbView_Click”更改为“protected”。
+已将文件 AdminRoom.aspx.cs 中(第 135 行)的访问级别“btnAddRoom_Click”更改为“protected”。
+已从文件 AdminUser.aspx 中移除属性 AutoEventWireup。
+已从文件 AdminUser.aspx 中移除属性 Codebehind。
+已将文件 AdminUser.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 AdminUser.aspx.cs 中(第 65 行)的访问级别“btnAddTearcher_Click”更改为“protected”。
+已将文件 AdminUser.aspx.cs 中(第 103 行)的访问级别“btnAddStudent_Click”更改为“protected”。
+已从文件 bxCourse.aspx 中移除属性 AutoEventWireup。
+已从文件 bxCourse.aspx 中移除属性 Codebehind。
+已将文件 bxCourse.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 CourseTime.aspx 中移除属性 AutoEventWireup。
+已从文件 CourseTime.aspx 中移除属性 Codebehind。
+已将文件 CourseTime.aspx.cs 中(第 22 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 CourseTime.aspx.cs 中(第 86 行)的访问级别“lkbAddTime_Click”更改为“protected”。
+已将文件 CourseTime.aspx.cs 中(第 159 行)的访问级别“ddlCWeekStart_SelectedIndexChanged”更改为“protected”。
+已将文件 CourseTime.aspx.cs 中(第 172 行)的访问级别“ddlBuilding_SelectedIndexChanged”更改为“protected”。
+已将文件 CourseTime.aspx.cs 中(第 190 行)的访问级别“btnAddTime_Click”更改为“protected”。
+已从文件 Error.aspx 中移除属性 AutoEventWireup。
+已从文件 Error.aspx 中移除属性 Codebehind。
+已将文件 Error.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 Global.asax 中移除属性 Codebehind。
+已从文件 Login.aspx 中移除属性 AutoEventWireup。
+已从文件 Login.aspx 中移除属性 Codebehind。
+已将文件 Login.aspx.cs 中(第 23 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 Login.aspx.cs 中(第 54 行)的访问级别“btnLogin_Click”更改为“protected”。
+已从文件 Logout.aspx 中移除属性 AutoEventWireup。
+已从文件 Logout.aspx 中移除属性 Codebehind。
+已将文件 Logout.aspx.cs 中(第 19 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 NewCourse.aspx 中移除属性 AutoEventWireup。
+已从文件 NewCourse.aspx 中移除属性 Codebehind。
+已将文件 NewCourse.aspx.cs 中(第 23 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 NewCourse.aspx.cs 中(第 95 行)的访问级别“btnAdd_Click”更改为“protected”。
+已从文件 SC.aspx 中移除属性 AutoEventWireup。
+已从文件 SC.aspx 中移除属性 Codebehind。
+已将文件 SC.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 SC.aspx.cs 中(第 158 行)的访问级别“dgSC_SelectedIndexChanged”更改为“protected”。
+已从文件 SelectedCourse.aspx 中移除属性 AutoEventWireup。
+已从文件 SelectedCourse.aspx 中移除属性 Codebehind。
+已将文件 SelectedCourse.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 SelectedCourse.aspx.cs 中(第 83 行)的访问级别“btnLock_Click”更改为“protected”。
+已从文件 Student.aspx 中移除属性 AutoEventWireup。
+已从文件 Student.aspx 中移除属性 Codebehind。
+已将文件 Student.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 Student.aspx.cs 中(第 62 行)的访问级别“btnUpdate_Click”更改为“protected”。
+已将文件 Student.aspx.cs 中(第 85 行)的访问级别“btnUpdateKey_Click”更改为“protected”。
+已从文件 StudentHeadControl.ascx 中移除属性 TargetSchema。
+已从文件 StudentHeadControl.ascx 中移除属性 AutoEventWireup。
+已从文件 StudentHeadControl.ascx 中移除属性 Codebehind。
+已将文件 StudentHeadControl.ascx.cs 中(第 17 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 StudentMain.aspx 中移除属性 AutoEventWireup。
+已从文件 StudentMain.aspx 中移除属性 Codebehind。
+已将文件 StudentMain.aspx.cs 中(第 19 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 Teacher.aspx 中移除属性 AutoEventWireup。
+已从文件 Teacher.aspx 中移除属性 Codebehind。
+已将文件 Teacher.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已将文件 Teacher.aspx.cs 中(第 64 行)的访问级别“btnUpdate_Click”更改为“protected”。
+已将文件 Teacher.aspx.cs 中(第 86 行)的访问级别“btnUpdatekey_Click”更改为“protected”。
+已从文件 TeacherHeadControl.ascx 中移除属性 TargetSchema。
+已从文件 TeacherHeadControl.ascx 中移除属性 AutoEventWireup。
+已从文件 TeacherHeadControl.ascx 中移除属性 Codebehind。
+已将文件 TeacherHeadControl.ascx.cs 中(第 16 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 TeacherMain.aspx 中移除属性 AutoEventWireup。
+已从文件 TeacherMain.aspx 中移除属性 Codebehind。
+已将文件 TeacherMain.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 ViewCourse.aspx 中移除属性 AutoEventWireup。
+已从文件 ViewCourse.aspx 中移除属性 Codebehind。
+已将文件 ViewCourse.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 ViewCourseTime.aspx 中移除属性 AutoEventWireup。
+已从文件 ViewCourseTime.aspx 中移除属性 Codebehind。
+已将文件 ViewCourseTime.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 ViewStudent.aspx 中移除属性 AutoEventWireup。
+已从文件 ViewStudent.aspx 中移除属性 Codebehind。
+已将文件 ViewStudent.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 ViewTeacher.aspx 中移除属性 AutoEventWireup。
+已从文件 ViewTeacher.aspx 中移除属性 Codebehind。
+已将文件 ViewTeacher.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已从文件 xxCourse.aspx 中移除属性 AutoEventWireup。
+已从文件 xxCourse.aspx 中移除属性 Codebehind。
+已将文件 xxCourse.aspx.cs 中(第 20 行)的访问级别“Page_Load”更改为“protected”。
+已添加文件夹 App_Code。
+已将文件 MyUtility.cs 移动到 App_Code\ 目录中。
+已将文件 Global.asax.cs 移动到 App_Code\ 目录中。
+已将文件 ErrorInfo.cs 移动到 App_Code\ 目录中。
+已将文件 Db.cs 移动到 App_Code\ 目录中。
+已将文件 AssemblyInfo.cs 移动到 App_Code\ 目录中。
+已移除文件 Bin\sc.dll。
+已移除文件 Bin\sc.pdb。
+已移除文件 sc.csproj。
+已移除文件 sc.csproj.webinfo。
+项目 sc.csproj 已在 December 01 2016, 15:43:01 成功转换。
