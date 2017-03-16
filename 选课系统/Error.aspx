@@ -11,7 +11,7 @@
 	<body>
 		<form id="Form1" method="post" runat="server">
 			<FONT face="ËÎÌו">
-				<asp:Label id="lbError" style="Z-INDEX: 101; LEFT: 504px; POSITION: absolute; TOP: 240px" Runat="server"
+				<asp:Label id="lbError" style="Z-INDEX: 101; LEFT: 504px; POSITION: absolute; TOP: 240px; bottom: 315px;" Runat="server"
 					ForeColor="Red" Text=""></asp:Label>
 				<asp:Label id="Label1" style="Z-INDEX: 102; LEFT: 480px; POSITION: absolute; TOP: 72px" runat="server"
 					Font-Size="XX-Large" Font-Bold="True">´םÎף£¡</asp:Label>

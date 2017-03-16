@@ -20,8 +20,12 @@
 					Width="112px"></asp:dropdownlist><asp:label id="lbTime2" style="Z-INDEX: 112; LEFT: 80px; POSITION: absolute; TOP: 440px" runat="server">上课地点</asp:label><asp:dropdownlist id="ddlBuilding" style="Z-INDEX: 101; LEFT: 128px; POSITION: absolute; TOP: 480px"
 					runat="server" Width="104px" AutoPostBack="True" onselectedindexchanged="ddlBuilding_SelectedIndexChanged"></asp:dropdownlist><asp:label id="Label9" style="Z-INDEX: 108; LEFT: 256px; POSITION: absolute; TOP: 480px" runat="server">教学楼</asp:label><asp:dropdownlist id="ddlRoom" style="Z-INDEX: 102; LEFT: 344px; POSITION: absolute; TOP: 480px" runat="server"
 					Width="152px"></asp:dropdownlist><asp:label id="Label13" style="Z-INDEX: 111; LEFT: 528px; POSITION: absolute; TOP: 480px" runat="server"
-					Width="32px">教室</asp:label><asp:button id="btnAddTime" style="Z-INDEX: 107; LEFT: 664px; POSITION: absolute; TOP: 456px"
-					runat="server" Width="144px" Text="添加上课时间" Height="48px" onclick="btnAddTime_Click"></asp:button><asp:datagrid id="dgTime" style="Z-INDEX: 115; LEFT: 56px; POSITION: absolute; TOP: 144px" runat="server"
+					Width="32px">教室</asp:label><asp:label id="lbCaption" style="Z-INDEX: 116; LEFT: 64px; POSITION: absolute; TOP: 120px"
+					runat="server"></asp:label><asp:linkbutton id="lkbAddTime" style="Z-INDEX: 117; LEFT: 752px; POSITION: absolute; TOP: 120px"
+					runat="server" onclick="lkbAddTime_Click">添加新的上课时间</asp:linkbutton>
+				<uc1:TeacherHeadControl id="TeacherHeadControl1" runat="server"></uc1:TeacherHeadControl></FONT>
+			<FONT face="宋体">
+				<asp:datagrid id="dgTime" style="Z-INDEX: 115; LEFT: 56px; POSITION: absolute; TOP: 144px" runat="server"
 					Width="833px" Height="104px" AllowPaging="True" PageSize="5" CellPadding="4" BackColor="White" BorderWidth="1px" BorderStyle="None" BorderColor="#3366CC" AutoGenerateColumns="False">
 					<SelectedItemStyle Font-Bold="True" ForeColor="#CCFF99" BackColor="#009999"></SelectedItemStyle>
 					<ItemStyle ForeColor="#003399" BackColor="White"></ItemStyle>
@@ -41,9 +45,18 @@
 					</Columns>
 					<PagerStyle NextPageText="下一页" PrevPageText="上一页" HorizontalAlign="Left" ForeColor="#003399"
 						BackColor="#99CCCC"></PagerStyle>
-				</asp:datagrid><asp:label id="lbCaption" style="Z-INDEX: 116; LEFT: 64px; POSITION: absolute; TOP: 120px"
-					runat="server"></asp:label><asp:linkbutton id="lkbAddTime" style="Z-INDEX: 117; LEFT: 752px; POSITION: absolute; TOP: 120px"
-					runat="server" onclick="lkbAddTime_Click">添加新的上课时间</asp:linkbutton>
-				<uc1:TeacherHeadControl id="TeacherHeadControl1" runat="server"></uc1:TeacherHeadControl></FONT></form>
+				</asp:datagrid></FONT>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+            <p>
+			<FONT face="宋体">
+				<asp:button id="btnAddTime" style="Z-INDEX: 107; LEFT: 662px; POSITION: absolute; TOP: 470px"
+					runat="server" Width="144px" Text="添加上课时间" Height="48px" onclick="btnAddTime_Click"></asp:button></FONT>
+            </p>
+        </form>
 	</body>
 </HTML>

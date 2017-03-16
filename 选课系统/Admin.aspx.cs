@@ -13,16 +13,16 @@ using System.Configuration;
 
 namespace sc
 {
-	/// <summary>
-	/// Admin 的摘要说明。
-	/// </summary>
-	public partial class Admin : System.Web.UI.Page
-	{
-    
-		protected void Page_Load(object sender, System.EventArgs e)
-		{
-			// 在此处放置用户代码以初始化页面
-            if ( ! IsPostBack )
+    /// <summary>
+    /// Admin 的摘要说明。
+    /// </summary>
+    public partial class Admin : System.Web.UI.Page
+    {
+
+        protected void Page_Load(object sender, System.EventArgs e)
+        {
+            // 在此处放置用户代码以初始化页面
+            if (!IsPostBack)
             {
                 Label2.Visible = false;
                 Label3.Visible = false;
@@ -37,29 +37,29 @@ namespace sc
                 sr.Close();
                 DateTime dtStart = DateTime.Parse(strStart);
                 DateTime dtEnd = DateTime.Parse(strEnd);
-                lbTime.Text = "选课时间为："+dtStart.ToString()+"到"+dtEnd.ToString();
+                lbTime.Text = "选课时间为：" + dtStart.ToString() + "到" + dtEnd.ToString();
             }
-		}
+        }
 
-		#region Web 窗体设计器生成的代码
-		override protected void OnInit(EventArgs e)
-		{
-			//
-			// CODEGEN: 该调用是 ASP.NET Web 窗体设计器所必需的。
-			//
-			InitializeComponent();
-			base.OnInit(e);
-		}
-		
-		/// <summary>
-		/// 设计器支持所需的方法 - 不要使用代码编辑器修改
-		/// 此方法的内容。
-		/// </summary>
-		private void InitializeComponent()
-		{    
+        #region Web 窗体设计器生成的代码
+        override protected void OnInit(EventArgs e)
+        {
+            //
+            // CODEGEN: 该调用是 ASP.NET Web 窗体设计器所必需的。
+            //
+            InitializeComponent();
+            base.OnInit(e);
+        }
+
+        /// <summary>
+        /// 设计器支持所需的方法 - 不要使用代码编辑器修改
+        /// 此方法的内容。
+        /// </summary>
+        private void InitializeComponent()
+        {
 
         }
-		#endregion
+        #endregion
 
         protected void lbtnNew_Click(object sender, System.EventArgs e)
         {
@@ -73,7 +73,7 @@ namespace sc
 
         protected void btnNew_Click(object sender, System.EventArgs e)
         {
-            DateTime dtStart,dtEnd;
+            DateTime dtStart, dtEnd;
             try
             {
                 dtStart = DateTime.Parse(txttimeStart.Text);
@@ -84,11 +84,11 @@ namespace sc
                 Response.Write(MyUtility.Alert("输入错误"));
                 return;
             }
-            StreamWriter sw = new StreamWriter("C:/Users/ted/Desktop/xkdoc/login.aspx", false);
+            StreamWriter sw = new StreamWriter("C:/Users/ted/Desktop/Graduation Design/选课系统/time.txt", false);
             sw.WriteLine(dtStart.ToString());
             sw.WriteLine(dtEnd.ToString());
             sw.Close();
-            lbTime.Text = "选课时间为："+dtStart.ToString()+"到"+dtEnd.ToString();
+            lbTime.Text = "选课时间为：" + dtStart.ToString() + "到" + dtEnd.ToString();
             Label2.Visible = false;
             Label3.Visible = false;
             Label1.Visible = false;
@@ -96,5 +96,5 @@ namespace sc
             btnNew.Visible = false;
             txtTimeEnd.Visible = false;
         }
-	}
+    }
 }
