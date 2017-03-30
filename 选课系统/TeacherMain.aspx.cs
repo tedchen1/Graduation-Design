@@ -23,7 +23,7 @@ namespace sc
             if ( ! IsPostBack )
             {
                 // string sql1 = "select * from Course";
-             
+              
                 String tid = Session["Id"].ToString();
                 //String tid = "1";
                 Console.WriteLine("session id = " + tid);

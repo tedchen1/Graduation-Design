@@ -8,11 +8,17 @@
 		<meta name="CODE_LANGUAGE" Content="C#">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+         <style type="text/css">
+         body {
+             background-image:url(img/bg6.jpg);
+             background-size: cover; 
+         }
+     </style>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
 			<uc1:StudentHeadControl id="StudentHeadControl1" runat="server"></uc1:StudentHeadControl>
-			<asp:DataGrid id="dgCourse" style="Z-INDEX: 101; LEFT: 80px; POSITION: absolute; TOP: 176px" runat="server"
+			<asp:DataGrid id="dgCourse" style="Z-INDEX: 101; LEFT: 368px; POSITION: absolute; TOP: 394px" runat="server"
 				BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" BackColor="White" CellPadding="4"
 				AutoGenerateColumns="False" Width="737px">
 				<SelectedItemStyle Font-Bold="True" ForeColor="#CCFF99" BackColor="#009999"></SelectedItemStyle>
@@ -33,10 +39,10 @@
 				</Columns>
 				<PagerStyle HorizontalAlign="Left" ForeColor="#003399" BackColor="#99CCCC" Mode="NumericPages"></PagerStyle>
 			</asp:DataGrid>
-			<asp:Button id="btnLock" style="Z-INDEX: 102; LEFT: 680px; POSITION: absolute; TOP: 144px" runat="server"
+			<asp:Button id="btnLock" style="Z-INDEX: 102; LEFT: 789px; POSITION: absolute; TOP: 344px; bottom: 353px;" runat="server"
 				Text="锁定选课信息" onclick="btnLock_Click"></asp:Button>
-			<asp:Label id="Label1" style="Z-INDEX: 103; LEFT: 88px; POSITION: absolute; TOP: 136px" runat="server">您已经选修的课程：</asp:Label>
-			<asp:Label id="lbLock" style="Z-INDEX: 104; LEFT: 424px; POSITION: absolute; TOP: 144px" runat="server"></asp:Label>
+			<asp:Label id="Label1" style="Z-INDEX: 103; LEFT: 373px; POSITION: absolute; TOP: 347px" runat="server">您已经选修的课程：</asp:Label>
+			<asp:Label id="lbLock" style="Z-INDEX: 104; LEFT: 622px; POSITION: absolute; TOP: 348px" runat="server"></asp:Label>
 		</form>
 	</body>
 </HTML>

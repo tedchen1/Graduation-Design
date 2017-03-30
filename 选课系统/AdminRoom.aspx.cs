@@ -75,6 +75,7 @@ namespace sc
                 ddlBuilding.DataTextField = "BuildingName";
                 ddlBuilding.DataValueField = "BuildingId";
                 ddlBuilding.DataBind();
+                Response.Write(MyUtility.Alert("教学楼添加成功，您添加的教学楼是： " + txtBuilding.Text));
             }
         }
 

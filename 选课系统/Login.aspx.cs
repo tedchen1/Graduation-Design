@@ -23,13 +23,13 @@ namespace sc
 		protected void Page_Load(object sender, System.EventArgs e)
 		{
 			// 在此处放置用户代码以初始化页面
-            int chk = MyUtility.CheckTime();
+           /* int chk = MyUtility.CheckTime();
             if ( chk < 0 )
                 Response.Redirect("Error.aspx?code="+ErrorInfo.ERR_SCTIMEEARLY.ToString());
             else if ( chk > 0 )
                 Response.Redirect("Error.aspx?code="+ErrorInfo.ERR_SCTIMELATE.ToString());
 //            string sql = " update Admin set AKey = '"+MyUtility.MD5("admin")+"'";
-//            Db.ExecuteSql(sql);
+//            Db.ExecuteSql(sql);*/
 		}
 
 		#region Web 窗体设计器生成的代码

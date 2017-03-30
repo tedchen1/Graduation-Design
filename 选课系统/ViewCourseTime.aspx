@@ -8,12 +8,18 @@
 		<meta name="CODE_LANGUAGE" Content="C#">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+          <style type="text/css">
+         body {
+             background-image:url(img/bg6.jpg);
+             background-size: cover; 
+         }
+     </style>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
-			<asp:label id="lbCaption" style="Z-INDEX: 116; LEFT: 112px; POSITION: absolute; TOP: 184px"
+			<asp:label id="lbCaption" style="Z-INDEX: 116; LEFT: 265px; POSITION: absolute; TOP: 372px"
 				runat="server"></asp:label>
-			<asp:datagrid id="dgTime" style="Z-INDEX: 115; LEFT: 112px; POSITION: absolute; TOP: 216px" runat="server"
+			<asp:datagrid id="dgTime" style="Z-INDEX: 115; LEFT: 259px; POSITION: absolute; TOP: 416px" runat="server"
 				PageSize="5" CellPadding="4" BackColor="White" BorderWidth="1px" BorderStyle="None" BorderColor="#3366CC"
 				AutoGenerateColumns="False" Height="104px" Width="833px">
 				<SelectedItemStyle Font-Bold="True" ForeColor="#CCFF99" BackColor="#009999"></SelectedItemStyle>

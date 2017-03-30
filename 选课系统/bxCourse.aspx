@@ -8,12 +8,18 @@
 		<meta content="C#" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+         <style type="text/css">
+         body {
+             background-image:url(img/bg6.jpg);
+             background-size: cover; 
+         }
+     </style>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
 			<uc1:studentheadcontrol id="StudentHeadControl1" runat="server"></uc1:studentheadcontrol><br>
 			<br>
-			<asp:DataGrid id="dgCourse" style="Z-INDEX: 101; LEFT: 96px; POSITION: absolute; TOP: 240px" runat="server"
+			<asp:DataGrid id="dgCourse" style="Z-INDEX: 101; LEFT: 250px; POSITION: absolute; TOP: 429px" runat="server"
 				Width="712px" Height="128px" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" BackColor="White"
 				CellPadding="4" AutoGenerateColumns="False">
 				<SelectedItemStyle Font-Bold="True" ForeColor="#CCFF99" BackColor="#009999"></SelectedItemStyle>
@@ -32,6 +38,6 @@
 				</Columns>
 				<PagerStyle HorizontalAlign="Left" ForeColor="#003399" BackColor="#99CCCC" Mode="NumericPages"></PagerStyle>
 			</asp:DataGrid>
-			<asp:Label id="Label1" style="Z-INDEX: 102; LEFT: 104px; POSITION: absolute; TOP: 208px" runat="server">必修课程列表：  (必修课程不需要选择，在您锁定选课信息时候自动加入到您的选课列表中！）</asp:Label></form>
+			<asp:Label id="Label1" style="Z-INDEX: 102; LEFT: 260px; POSITION: absolute; TOP: 394px" runat="server">必修课程列表：  (必修课程不需要选择，在您锁定选课信息时候自动加入到您的选课列表中！）</asp:Label></form>
 	</body>
 </HTML>

@@ -8,17 +8,18 @@
 		<meta name="CODE_LANGUAGE" Content="C#">
 		<meta name="vs_defaultClientScript" content="JavaScript">
 		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+         <style type="text/css">
+         body {
+             background-image:url(img/bg2.jpg);
+             background-size: cover; 
+         }
+     </style>
 	</HEAD>
 	<body>
 		<form id="Form1" method="post" runat="server">
 			<uc1:TeacherHeadControl id="TeacherHeadControl1" runat="server"></uc1:TeacherHeadControl>
-			<asp:DataGrid id="dgCourse" style="Z-INDEX: 101; LEFT: 40px; POSITION: absolute; TOP: 168px" runat="server"
-				Width="880px" Height="56px" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" BackColor="White"
-				CellPadding="4" AutoGenerateColumns="False">
-				<SelectedItemStyle Font-Bold="True" ForeColor="#CCFF99" BackColor="#009999"></SelectedItemStyle>
-				<ItemStyle ForeColor="#003399" BackColor="White"></ItemStyle>
-				<HeaderStyle Font-Bold="True" ForeColor="#CCCCFF" BackColor="#003399"></HeaderStyle>
-				<FooterStyle ForeColor="#003399" BackColor="#99CCCC"></FooterStyle>
+			<asp:DataGrid id="dgCourse" style="Z-INDEX: 101; LEFT: 370px; POSITION: absolute; TOP: 331px; height: 206px; width: 909px;" runat="server" BorderColor="Black" BorderWidth="2px"
+				CellPadding="5" AutoGenerateColumns="False" Font-Bold="True">
 				<Columns>
 					<asp:BoundColumn Visible="False" DataField="CId" HeaderText="课程编号"></asp:BoundColumn>
 					<asp:BoundColumn Visible="False" DataField="TId" HeaderText="教师编号"></asp:BoundColumn>
@@ -32,11 +33,10 @@
 					<asp:HyperLinkColumn Text="评定成绩" DataNavigateUrlField="CId" DataNavigateUrlFormatString="SC.aspx?CId={0}"></asp:HyperLinkColumn>
 					<asp:HyperLinkColumn Text="时间地点编排" DataNavigateUrlField="CId" DataNavigateUrlFormatString="CourseTime.aspx?CId={0}"></asp:HyperLinkColumn>
 				</Columns>
-				<PagerStyle HorizontalAlign="Left" ForeColor="#003399" BackColor="#99CCCC" Mode="NumericPages"></PagerStyle>
 			</asp:DataGrid>
-			<asp:Label id="Label1" style="Z-INDEX: 102; LEFT: 40px; POSITION: absolute; TOP: 128px; right: 1146px;" runat="server"
+			<asp:Label id="Label1" style="Z-INDEX: 102; LEFT: 394px; POSITION: absolute; TOP: 269px; right: 856px; height: 20px;" runat="server"
 				Font-Bold="True" ForeColor="SeaGreen">您当前开设的课程：</asp:Label>
-			<asp:Label id="lbCount" style="Z-INDEX: 103; LEFT: 208px; POSITION: absolute; TOP: 128px" runat="server"></asp:Label>
+			<asp:Label id="lbCount" style="Z-INDEX: 103; LEFT: 566px; POSITION: absolute; TOP: 269px" runat="server"></asp:Label>
 		</form>
 	</body>
 </HTML>
